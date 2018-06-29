@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/stretchr/testify/assert"
 )
-//go:generate
+
 // 测试Int数组·排序
 func TestRortIntArray(t *testing.T){
 	nums := []int{0,0,4,1,3,2,2,3,3,4}
@@ -48,4 +48,20 @@ func TestContainsDuplicate(t *testing.T){
 	flag3 := containsDuplicate(nums3)
 	assert.Equal(t, false, flag3)
 	fmt.Println(flag3)
+}
+
+func TestPlusOne(t *testing.T)  {
+	//fmt.Println(2/10)
+	//fmt.Println(2%10)
+	nums := []int{1,0,9}
+	//r := plusOne(nums)
+	//for _, i := range r {
+	//	fmt.Println(i)
+	//}
+
+	r2 := plusOne2(nums)
+	for _, i := range r2 {
+		fmt.Println(i)
+	}
+
 }
